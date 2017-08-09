@@ -1,0 +1,21 @@
+function(){return(function(){var b=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")};function f(a){return-1!=h.indexOf(a)}
+function k(a,c){var g=0;a=b(String(a)).split(".");c=b(String(c)).split(".");for(var v=Math.max(a.length,c.length),p=0;0==g&&p<v;p++){var e=a[p]||"",d=c[p]||"";do{e=/(\d*)(\D*)(.*)/.exec(e)||["","","",""];d=/(\d*)(\D*)(.*)/.exec(d)||["","","",""];if(0==e[0].length&&0==d[0].length)break;g=l(0==e[1].length?0:parseInt(e[1],10),0==d[1].length?0:parseInt(d[1],10))||l(0==e[2].length,0==d[2].length)||l(e[2],d[2]);e=e[3];d=d[3]}while(0==g)}return g}function l(a,c){return a<c?-1:a>c?1:0};var h;a:{var m=this.navigator;if(m){var n=m.userAgent;if(n){h=n;break a}}h=""};function q(){return(f("Chrome")||f("CriOS"))&&!f("Edge")};function r(){return f("iPhone")&&!f("iPod")&&!f("iPad")};function t(a,c){var g=u;return Object.prototype.hasOwnProperty.call(g,a)?g[a]:g[a]=c(a)};var w="",x=/WebKit\/(\S+)/.exec(h);x&&(w=x?x[1]:"");var y=w,u={};function z(a){return t(a,function(){return 0<=k(y,a)})};var A=f("Firefox"),B=r()||f("iPod"),C=f("iPad"),D=f("Android")&&!(q()||f("Firefox")||f("Opera")||f("Silk")),E=q(),F=f("Safari")&&!(q()||f("Coast")||f("Opera")||f("Edge")||f("Silk")||f("Android"))&&!(r()||f("iPad")||f("iPod"));/*
+
+ Copyright 2014 Software Freedom Conservancy
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+var G=window;function H(a,c){this.code=a;this.a=I[a]||"unknown error";this.message=c||"";a=this.a.replace(/((?:^|\s+)[a-z])/g,function(a){return a.toUpperCase().replace(/^[\s\xa0]+/g,"")});c=a.length-5;if(0>c||a.indexOf("Error",c)!=c)a+="Error";this.name=a;a=Error(this.message);a.name=this.name;this.stack=a.stack||""}
+(function(){var a=Error;function c(){}c.prototype=a.prototype;H.b=a.prototype;H.prototype=new c;H.prototype.constructor=H;H.a=function(c,v,p){for(var e=Array(arguments.length-2),d=2;d<arguments.length;d++)e[d-2]=arguments[d];return a.prototype[v].apply(c,e)}})();
+var I={15:"element not selectable",11:"element not visible",31:"unknown error",30:"unknown error",24:"invalid cookie domain",29:"invalid element coordinates",12:"invalid element state",32:"invalid selector",51:"invalid selector",52:"invalid selector",17:"javascript error",405:"unsupported operation",34:"move target out of bounds",27:"no such alert",7:"no such element",8:"no such frame",23:"no such window",28:"script timeout",33:"session not created",10:"stale element reference",21:"timeout",25:"unable to set cookie",
+26:"unexpected alert open",13:"unknown error",9:"unknown command"};H.prototype.toString=function(){return this.name+": "+this.message};z("528");z("528");function J(a){return(a=a.exec(h))?a[1]:""}var K=function(){if(A)return J(/Firefox\/([0-9.]+)/);if(E)return r()||f("iPad")||f("iPod")?J(/CriOS\/([0-9.]+)/):J(/Chrome\/([0-9.]+)/);if(F&&!(r()||f("iPad")||f("iPod")))return J(/Version\/([0-9.]+)/);if(B||C){var a=/Version\/(\S+).*Mobile\/(\S+)/.exec(h);if(a)return a[1]+"."+a[2]}else if(D)return(a=J(/Android\s+([0-9.]+)/))?a:J(/Version\/([0-9.]+)/);return""}();function L(a){D?k(M,a):k(K,a)}var N;if(D){var O=/Android\s+([0-9\.]+)/.exec(h);N=O?O[1]:"0"}else N="0";var M=N;D&&L(2.3);D&&L(4);F&&L(6);D&&L(4);var P=z("533");function Q(a){var c=P?G.history.length-1:null;a=void 0!==a?a:1;if(0>=a)throw new H(13,"number of pages must be positive");if(null!==c&&a>c)throw new H(13,"number of pages must be less than the length of the browser history");G.history.go(a)}var R=["_"],S=this;R[0]in S||!S.execScript||S.execScript("var "+R[0]);for(var T;R.length&&(T=R.shift());)R.length||void 0===Q?S[T]&&S[T]!==Object.prototype[T]?S=S[T]:S=S[T]={}:S[T]=Q;;return this._.apply(null,arguments);}).apply({navigator:typeof window!="undefined"?window.navigator:null},arguments);}
