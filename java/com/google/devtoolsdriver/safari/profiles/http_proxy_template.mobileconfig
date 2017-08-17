@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadDescription</key>
+      <string>Global HTTP Proxy</string>
+      <key>PayloadDisplayName</key>
+      <string>Global HTTP Proxy</string>
+      <key>PayloadIdentifier</key>
+      <string>com.apple.proxy.http.global.CF237754-A774-4832-A507-E944FB58A670</string>
+      <key>PayloadType</key>
+      <string>com.apple.proxy.http.global</string>
+      <key>PayloadUUID</key>
+      <string>CF237754-A774-4832-A507-E944FB58A670</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>ProxyCaptiveLoginAllowed</key>
+      <false/>
+      <key>ProxyServer</key>
+      <string>HOSTNAME</string>
+      <key>ProxyServerPort</key>
+      <integer>0</integer>
+      <key>ProxyType</key>
+      <string>Manual</string>
+    </dict>
+  </array>
+  <key>PayloadDisplayName</key>
+  <string>HTTP Proxy Settings</string>
+  <key>PayloadIdentifier</key>
+  <string>com.google.devtoolsdriver.safari.http_proxy</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>B6F9E2AA-0514-4AF4-ACA0-60F7872A4F5F</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+</dict>
+</plist>
