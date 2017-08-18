@@ -168,7 +168,7 @@
             <configuration>
               <sources>
                 <source>java</source>
-                <source>third_party/java</source>
+                <source>third_party/ios_driver</source>
               </sources>
             </configuration>
           </execution>
